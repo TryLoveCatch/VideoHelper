@@ -1,0 +1,223 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* README.md
+* build.gradle1
+* build/
+* build/generated/
+* build/generated/source/
+* build/generated/source/buildConfig/
+* build/generated/source/buildConfig/release/
+* build/generated/source/buildConfig/release/io/
+* build/generated/source/buildConfig/release/io/vov/
+* build/generated/source/buildConfig/release/io/vov/vitamio/
+* build/generated/source/buildConfig/release/io/vov/vitamio/BuildConfig.java
+* build/generated/source/r/
+* build/generated/source/r/release/
+* build/generated/source/r/release/io/
+* build/generated/source/r/release/io/vov/
+* build/generated/source/r/release/io/vov/vitamio/
+* build/generated/source/r/release/io/vov/vitamio/R.java
+* build/intermediates/
+* build/intermediates/bundles/
+* build/intermediates/bundles/release/
+* build/intermediates/bundles/release/AndroidManifest.xml
+* build/intermediates/bundles/release/R.txt
+* build/intermediates/bundles/release/aapt/
+* build/intermediates/bundles/release/aapt/AndroidManifest.xml
+* build/intermediates/bundles/release/classes.jar
+* build/intermediates/bundles/release/jni/
+* build/intermediates/bundles/release/jni/armeabi-v7a/
+* build/intermediates/bundles/release/jni/armeabi-v7a/libOMX.14.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libOMX.18.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libffmpeg.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libstlport_shared.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libvao.0.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libvplayer.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libvscanner.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libvvo.9.so
+* build/intermediates/bundles/release/jni/armeabi-v7a/libvvo.j.so
+* build/intermediates/bundles/release/res/
+* build/intermediates/bundles/release/res/drawable-hdpi/
+* build/intermediates/bundles/release/res/drawable-hdpi/ic_launcher.png
+* build/intermediates/bundles/release/res/drawable-ldpi/
+* build/intermediates/bundles/release/res/drawable-ldpi/ic_launcher.png
+* build/intermediates/bundles/release/res/drawable-mdpi/
+* build/intermediates/bundles/release/res/drawable-mdpi/ic_launcher.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/
+* build/intermediates/bundles/release/res/drawable-xhdpi/ic_launcher.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/mediacontroller_pause.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/mediacontroller_play.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_control_disabled_holo.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_control_focused_holo.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_control_normal_holo.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_control_pressed_holo.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_primary_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_secondary_holo.9.png
+* build/intermediates/bundles/release/res/drawable-xhdpi/scrubber_track_holo_dark.9.png
+* build/intermediates/bundles/release/res/drawable/
+* build/intermediates/bundles/release/res/drawable/mediacontroller_button.xml
+* build/intermediates/bundles/release/res/drawable/scrubber_control_selector_holo.xml
+* build/intermediates/bundles/release/res/drawable/scrubber_progress_horizontal_holo_dark.xml
+* build/intermediates/bundles/release/res/layout/
+* build/intermediates/bundles/release/res/layout/mediacontroller.xml
+* build/intermediates/bundles/release/res/values/
+* build/intermediates/bundles/release/res/values/values.xml
+* build/intermediates/classes/
+* build/intermediates/classes/release/
+* build/intermediates/classes/release/io/
+* build/intermediates/classes/release/io/vov/
+* build/intermediates/classes/release/io/vov/vitamio/
+* build/intermediates/classes/release/io/vov/vitamio/BuildConfig.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$1.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$ComponentSizeChooser.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$EGLConfigChooser.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$EGLContextFactory.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$EGLWindowSurfaceFactory.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL$SimpleEGLConfigChooser.class
+* build/intermediates/classes/release/io/vov/vitamio/EGL.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaFile$MediaFileType.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaFile.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaFormat.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaMetadataRetriever.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$EventHandler.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnBufferingUpdateListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnCachingUpdateListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnCompletionListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnErrorListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnHWRenderFailedListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnInfoListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnPreparedListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnSeekCompleteListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnTimedTextListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$OnVideoSizeChangedListener.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer$TrackInfo.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaPlayer.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaScanner$1.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaScanner$FileCacheEntry.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaScanner$MyMediaScannerClient.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaScanner.class
+* build/intermediates/classes/release/io/vov/vitamio/MediaScannerClient.class
+* build/intermediates/classes/release/io/vov/vitamio/Metadata.class
+* build/intermediates/classes/release/io/vov/vitamio/R$attr.class
+* build/intermediates/classes/release/io/vov/vitamio/R$color.class
+* build/intermediates/classes/release/io/vov/vitamio/R$drawable.class
+* build/intermediates/classes/release/io/vov/vitamio/R$id.class
+* build/intermediates/classes/release/io/vov/vitamio/R$layout.class
+* build/intermediates/classes/release/io/vov/vitamio/R$string.class
+* build/intermediates/classes/release/io/vov/vitamio/R$style.class
+* build/intermediates/classes/release/io/vov/vitamio/R.class
+* build/intermediates/classes/release/io/vov/vitamio/ThumbnailUtils.class
+* build/intermediates/classes/release/io/vov/vitamio/VIntent.class
+* build/intermediates/classes/release/io/vov/vitamio/Vitamio.class
+* build/intermediates/classes/release/io/vov/vitamio/VitamioLicense.class
+* build/intermediates/classes/release/io/vov/vitamio/activity/
+* build/intermediates/classes/release/io/vov/vitamio/activity/InitActivity$1.class
+* build/intermediates/classes/release/io/vov/vitamio/activity/InitActivity$UIHandler.class
+* build/intermediates/classes/release/io/vov/vitamio/activity/InitActivity.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Audio$AudioColumns.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Audio$Media.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Audio.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$InternalThumbnails.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$MediaColumns.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Video$Media.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Video$Thumbnails.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Video$VideoColumns.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore$Video.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MediaStore.class
+* build/intermediates/classes/release/io/vov/vitamio/provider/MiniThumbFile.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/
+* build/intermediates/classes/release/io/vov/vitamio/utils/Base64$Coder.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Base64$Decoder.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Base64$Encoder.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Base64.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/CPU.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/ContextUtils.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Crypto.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Device.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/FileUtils.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/IOUtils.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/Log.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/ScreenResolution.class
+* build/intermediates/classes/release/io/vov/vitamio/utils/StringUtils.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/
+* build/intermediates/classes/release/io/vov/vitamio/widget/CenterLayout$LayoutParams.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/CenterLayout.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$1.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$2.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$3.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$MediaPlayerControl.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$OnHiddenListener.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController$OnShownListener.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/MediaController.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/OutlineTextView.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$1.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$2.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$3.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$4.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$5$1.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$5.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$6.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$7.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$8.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView$9.class
+* build/intermediates/classes/release/io/vov/vitamio/widget/VideoView.class
+* build/intermediates/incremental/
+* build/intermediates/incremental/aidl/
+* build/intermediates/incremental/aidl/release/
+* build/intermediates/incremental/aidl/release/dependency.store
+* build/intermediates/incremental/mergeAssets/
+* build/intermediates/incremental/mergeAssets/release/
+* build/intermediates/incremental/mergeAssets/release/merger.xml
+* build/intermediates/incremental/packageResourcesrelease/
+* build/intermediates/incremental/packageResourcesrelease/merger.xml
+* build/outputs/
+* build/outputs/aar/
+* build/outputs/aar/vitamio-release.aar
+* build/tmp/
+* build/tmp/packageReleaseJar/
+* build/tmp/packageReleaseJar/MANIFEST.MF
+* proguard-project.txt
+* vitamio.iml
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => vitamio/src/main/AndroidManifest.xml
+* assets/ => vitamio/src/main/assets
+* libs/armeabi-v7a/libOMX.14.so => vitamio/src/main/jniLibs/armeabi-v7a/libOMX.14.so
+* libs/armeabi-v7a/libOMX.18.so => vitamio/src/main/jniLibs/armeabi-v7a/libOMX.18.so
+* libs/armeabi-v7a/libffmpeg.so => vitamio/src/main/jniLibs/armeabi-v7a/libffmpeg.so
+* libs/armeabi-v7a/libstlport_shared.so => vitamio/src/main/jniLibs/armeabi-v7a/libstlport_shared.so
+* libs/armeabi-v7a/libvao.0.so => vitamio/src/main/jniLibs/armeabi-v7a/libvao.0.so
+* libs/armeabi-v7a/libvplayer.so => vitamio/src/main/jniLibs/armeabi-v7a/libvplayer.so
+* libs/armeabi-v7a/libvscanner.so => vitamio/src/main/jniLibs/armeabi-v7a/libvscanner.so
+* libs/armeabi-v7a/libvvo.9.so => vitamio/src/main/jniLibs/armeabi-v7a/libvvo.9.so
+* libs/armeabi-v7a/libvvo.j.so => vitamio/src/main/jniLibs/armeabi-v7a/libvvo.j.so
+* res/ => vitamio/src/main/res/
+* src/ => vitamio/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

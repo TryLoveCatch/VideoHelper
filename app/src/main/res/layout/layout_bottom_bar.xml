@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/gray_200"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/bottom_backward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@mipmap/tab_ic_back_disable" />
+
+    <ImageButton
+        android:id="@+id/bottom_forward"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@mipmap/tab_ic_go_disable" />
+
+    <ImageButton
+        android:id="@+id/bottom_exit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/ic_home" />
+
+    <ImageButton
+        android:id="@+id/bottom_download"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/ic_download" />
+
+    <ImageButton
+        android:id="@+id/bottom_bookmark"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:src="@drawable/ic_bm" />
+
+</LinearLayout>

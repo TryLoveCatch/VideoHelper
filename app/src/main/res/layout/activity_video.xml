@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <io.vov.vitamio.widget.CenterLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <io.vov.vitamio.widget.VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <include
+            android:id="@+id/sdk_ijk_progress_bar_layout"
+            layout="@layout/layout_fragment_video_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/sdk_load_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <net.luna.common.view.progress.ProgressBarCircularIndeterminate
+                android:id="@+id/sdk_sdk_ijk_load_buffer_load"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:background="#dddddd" />
+
+            <TextView
+                android:id="@+id/sdk_sdk_ijk_load_buffer_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/VideoView_loading_text"
+                android:textColor="#cccccc"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </io.vov.vitamio.widget.CenterLayout>
+
+
+    <android.luna.net.videohelper.widget.EpisodeLayout
+        android:id="@+id/layout_episodes"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="#88000000"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/btn_episode_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_16dp"
+            android:layout_toRightOf="@id/btn_episode_back"
+            android:text="@string/episode_selection"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_16sp" />
+
+        <GridView
+            android:id="@+id/gridview_episode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/btn_episode_back"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:horizontalSpacing="4dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:paddingBottom="4dp"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" />
+
+    </android.luna.net.videohelper.widget.EpisodeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_tips_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:scaleType="fitXY"
+            android:src="@mipmap/pic_video_tips" />
+
+        <TextView
+            android:id="@+id/btn_knowed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/tv_conner_bg"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="@dimen/padding_8dp"
+            android:text="@string/knowed"
+            android:textColor="@drawable/tv_white_orange"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

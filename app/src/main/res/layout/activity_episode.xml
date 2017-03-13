@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin_16dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:textColor="@color/text_black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btn_download_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:src="@drawable/ic_download"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_300" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/btn_begin_download"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_light"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/begin_download"
+        android:textColor="@drawable/tv_black_blue"
+        android:visibility="gone" />
+
+
+    <GridView
+        android:id="@+id/gridview_episode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_begin_download"
+        android:layout_below="@id/top_bar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:horizontalSpacing="16dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingTop="16dp"
+        android:scrollbars="none"
+        android:verticalSpacing="16dp" />
+
+</RelativeLayout>

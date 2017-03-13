@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_top_bar" />
+
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载..."
+            android:textColor="#aaaaaa" />
+
+    </LinearLayout>
+
+
+    <net.luna.common.view.widget.RefreshLayout
+        android:id="@+id/video_list_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/title_bar">
+
+
+        <android.luna.net.videohelper.widget.GridViewWithHeaderAndFooter
+            android:id="@+id/video_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/footer"
+            android:layout_below="@id/title_bar"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/padding_8dp" />
+    </net.luna.common.view.widget.RefreshLayout>
+
+    <include
+        android:id="@+id/progress_dialog"
+        layout="@layout/dialog_progress" />
+
+</RelativeLayout>

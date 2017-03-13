@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sdk_media_controller_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/sdk_curview_root"
+        layout="@layout/venvy_video_media_controller_sdk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 声音 亮度布局 -->
+
+    <include
+        android:id="@+id/sdk_media_controller_operation_volume_brightness"
+        layout="@layout/venvy_video_media_controller_brightness_volumn_sdk"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    <!-- 手势快进 快退 -->
+
+    <include
+        android:id="@+id/sdk_media_controller_plan_layout"
+        layout="@layout/venvy_video_media_controller_plan_sdk"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

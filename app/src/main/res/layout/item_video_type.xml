@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/btn_more"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:drawableRight="@drawable/ic_go"
+        android:gravity="center_vertical"
+        android:paddingRight="4dp"
+        android:text="@string/all"
+        android:textColor="@drawable/tv_all"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/type_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@id/btn_more"
+        android:drawableLeft="@mipmap/point_yellow"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/type_text"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/table_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/type_name"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:id="@+id/table_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_layout1"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

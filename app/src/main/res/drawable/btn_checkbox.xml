@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- checked -->
+    <item android:drawable="@mipmap/download_ic_check" android:state_checked="true" />
+    <!-- default -->
+    <item android:drawable="@mipmap/download_ic_uncheck" android:state_checked="false" />
+</selector>

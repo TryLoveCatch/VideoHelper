@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="NormalActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="video_source_spinner" parent="Platform.Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/spinner_mtrl</item>
+        <item name="android:popupBackground">#bb222222</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">left|start|center_vertical</item>
+        <item name="overlapAnchor">true</item>
+    </style>
+
+
+    <style name="BrowserActivityTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ReadabilityActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="SettingActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="WhitelistActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="TokenActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ClearActivityTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+
+</resources>

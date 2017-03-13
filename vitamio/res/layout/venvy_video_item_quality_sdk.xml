@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="48dp">
+
+    <View
+        android:id="@+id/line"
+        style="@style/venvy_video_quality_line_style" />
+
+    <TextView
+        android:id="@+id/quality_text"
+        style="@style/venvy_video_quality_text_style"
+        android:layout_marginBottom="8dp"
+        android:layout_toLeftOf="@+id/line"
+        android:layout_toStartOf="@+id/line" />
+
+</RelativeLayout>

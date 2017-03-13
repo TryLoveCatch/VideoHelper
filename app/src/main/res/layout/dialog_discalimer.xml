@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/disclaimer"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="1dp"
+        android:background="@mipmap/pic_line" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:gravity="center"
+            android:text="@string/disclaimer_detial"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </ScrollView>
+
+
+    <CheckBox
+        android:id="@+id/checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:checked="true"
+        android:text="@string/disclaimer_check"
+        android:textColor="#666666" />
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="1dp"
+        android:background="@mipmap/pic_line" />
+
+    <net.luna.common.view.button.ButtonFlat
+        android:id="@+id/accept_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/black"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="我知道了"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/download_tag_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/title_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/downloaded_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/tag_downloaded"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/text_size_18sp" />
+
+        <TextView
+            android:id="@+id/downloading_tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="@string/tag_downloading"
+            android:textColor="@color/text_black_secondary"
+            android:textSize="@dimen/text_size_18sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/download_tag_layout"
+        android:background="@color/gray_300" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/download_page_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/download_tag_layout">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

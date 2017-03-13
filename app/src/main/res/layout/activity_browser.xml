@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:id="@+id/main_omnibox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_48dp"
+        android:minHeight="@dimen/layout_height_48dp">
+
+        <ImageButton
+            android:id="@+id/main_omnibox_record"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/layout_margin_8dp"
+            android:layout_marginRight="@dimen/layout_margin_8dp"
+            android:layout_marginTop="@dimen/layout_margin_8dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@drawable/ic_record" />
+
+        <RelativeLayout
+            android:id="@+id/main_omnibox_url"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_36dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/layout_margin_8dp"
+            android:layout_toLeftOf="@id/main_omnibox_record"
+            android:background="@drawable/bg_webinputbox"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/layout_height_36dp">
+
+            <RelativeLayout
+                android:id="@+id/main_omnibox_left_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:id="@+id/main_omnibox_bookmark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:onClick="onClick"
+                    android:paddingLeft="8dp"
+                    android:src="@drawable/ic_title_bm" />
+
+                <ImageButton
+                    android:id="@+id/main_omnibox_icon_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:paddingLeft="8dp"
+                    android:src="@mipmap/home_nav_ic_searchbar" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/main_omnibox_right_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <ImageButton
+                    android:id="@+id/main_omnibox_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:contentDescription="@null"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_refresh" />
+
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/main_omnibox_input"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_36dp"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/main_omnibox_left_btn"
+                android:layout_toStartOf="@id/main_omnibox_right_btn"
+                android:background="@android:color/transparent"
+                android:completionThreshold="1"
+                android:hint="@string/main_omnibox_input_hint"
+                android:imeOptions="actionGo"
+                android:inputType="textNoSuggestions|textWebEditText"
+                android:minHeight="@dimen/layout_height_36dp"
+                android:paddingLeft="@dimen/padding_8dp"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/text_black"
+                android:textColorHint="@color/text_black_secondary"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_16sp"
+                android:layout_toRightOf="@id/main_omnibox_left_btn"
+                android:layout_toLeftOf="@id/main_omnibox_right_btn" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/main_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_height_2dp"
+            android:layout_alignParentBottom="true"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:maxHeight="@dimen/layout_height_2dp"
+            android:progressDrawable="@drawable/progress_bar_layer_list"></ProgressBar>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/layout_bottom_bar" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom_bar"
+        android:layout_below="@id/main_omnibox">
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_200" />
+
+        <include
+            android:id="@+id/parse_layout"
+            layout="@layout/layout_parser" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/main_omnibox"
+        android:background="@color/gray_300" />
+
+    <include
+        android:id="@+id/layout_prologure"
+        layout="@layout/layout_prologue" />
+
+    <ImageView
+        android:id="@+id/parser_guide_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@mipmap/guide_pic"
+        android:visibility="gone" />
+
+</RelativeLayout>
+
+

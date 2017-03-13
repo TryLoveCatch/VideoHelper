@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_introduce_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="@dimen/layout_margin_16dp"
+    android:layout_marginRight="@dimen/layout_margin_16dp"
+    android:layout_marginTop="8dp">
+
+
+    <ImageView
+        android:id="@+id/video_thumbnail"
+        android:layout_width="95dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/search_img_default_210x280" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/video_thumbnail"
+        android:layout_toRightOf="@id/video_thumbnail">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/cast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/text_black_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cast"
+            android:layout_marginBottom="8dp"
+            android:lines="1"
+            android:textColor="@color/text_black_secondary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/genres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area"
+            android:layout_marginBottom="8dp"
+            android:lines="1"
+            android:textColor="@color/text_black_secondary"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</RelativeLayout>
